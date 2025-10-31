@@ -31,15 +31,16 @@ const Footer = () => {
           {/* Logo + Contact Info */}
           <div className="col-lg-3">
             <div className="widget d-flex flex-column align-items-center">
-              <div className="d-flex w-100">
+              <div className="d-flex w-100 align-items-center">
                 <Image
-                  src="/img/logo.webp"
+                  src="/helixyne.png"
                   alt="Logo | ENTrova"
-                  width={150}
-                  height={100}
+                  width={60}
+                  height={60}
                   className="text-center"
-                  style={{ width: '100%', height: '100%' }}
+                  style={{ width: 'auto', height: 'auto' }}
                 />
+                <span className="ms-2 fs-4 logo-text-blue">Helixyne</span>
               </div>
 
               {/* Address, Email, Phone */}
@@ -52,15 +53,35 @@ const Footer = () => {
                 </div>
                 <div className="d-flex mb-1 align-items-center">
                   <i className="uil uil-envelope fs-26" />
-                  <Link href="mailto:contact@example.com" className="link-body ms-2">
-                    contact@example.com
-                  </Link>
+                  <div className="ms-2">
+                    <NextLink href="mailto:info@helixyne.com" className="link-body">
+                      info@helixyne.com
+                    </NextLink>
+                    <br />
+                    <NextLink href="mailto:faizan@helixyne.com" className="link-body">
+                      faizan@helixyne.com
+                    </NextLink>
+                    <br />
+                    <NextLink href="mailto:mkt@helixyne.com" className="link-body">
+                      mkt@helixyne.com
+                    </NextLink>
+                  </div>
                 </div>
                 <div className="d-flex align-items-center mb-1">
                   <i className="uil uil-phone-volume fs-26" />
-                  <p className="m-0 ms-2 fs-16">
-                    <Link href="tel:+911234567890">+91 12345 67890</Link>
-                  </p>
+                  <div className="ms-2 fs-16">
+                    <NextLink href="tel:+923126755909">+92 312 6755909</NextLink>
+                    <br />
+                    <NextLink href="tel:+923114501358">+92 311 4501358</NextLink>
+                    <br />
+                    <NextLink href="tel:+923467663027">+92 346 7663027</NextLink>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center mb-1">
+                  <i className="uil uil-whatsapp fs-26" />
+                  <NextLink href="https://wa.me/923126755909" title="WhatsApp" className="link-body ms-2">
+                    +92 312 6755909
+                  </NextLink>
                 </div>
               </div>
             </div>
@@ -77,11 +98,7 @@ const Footer = () => {
             <FooterWidget title="Quick Links" items={aboutUsFooter} />
           </div>
 
-          {/* Treatments */}
-          <div className="col-sm-6 col-md-4 col-lg-3 mt-md-5 mt-lg-0 mt-10 ms-0 ms-md-5">
-            <FooterWidget title="Treatments" items={treatmentsFooter} />
-          </div>
-
+          
           {/* Location Map */}
           <div className="col-lg-3 mt-md-5 mt-lg-0 mt-10">
             <div className="widget">

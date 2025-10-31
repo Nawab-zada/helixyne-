@@ -5,10 +5,11 @@ const NextLink = props => {
   const {
     className,
     href,
-    title
+    title,
+    children
   } = props;
   return <Link href={href} className={className}>
-    {title}
+    {children || title}
   </Link>;
 };
 

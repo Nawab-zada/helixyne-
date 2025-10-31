@@ -4,6 +4,7 @@ import PageProgress from 'components/PageProgress';
 import Hero from 'components/Hero';
 import About from 'components/About';
 import Services from 'components/Services';
+import { FaCogs } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -21,38 +22,39 @@ const Home = () => {
         <Hero />
 
         {/* About Section */}
-        <section className="wrapper bg-light">
+        <section id="about-us" className="wrapper bg-light">
           <div className="container pt-8 pt-md-15">
             <About
               imgPosition="right"
-              imgSrc="/img/ent.webp"
-              heading="Best ENT Hospital in Location"
-              para="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ut, nisi voluptatum dolore fuga molestiae optio magnam, sit recusandae vel repellat. Ad fuga eius modi repellendus perspiciatis fugit necessitatibus iusto blanditiis optio. Ipsam, qui cum? Numquam itaque doloremque qui, nihil sit, eligendi magni accusantium eaque similique vel deleniti hic recusandae. Ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ut, nisi voluptatum dolore fuga molestiae optio magnam, sit recusandae vel repellat. Ad fuga eius modi repellendus perspiciatis fugit necessitatibus iusto blanditiis optio. Ipsam, qui cum? Numquam itaque doloremque qui, nihil sit, eligendi magni accusantium eaque similique vel deleniti hic recusandae."
-              isH1="true"
+              imgSrc="/aboutus.jpg"
+              heading="About Us"
+              para="Our Mission\n\nAt Helixyne, we are dedicated to enabling access to trusted pharmaceutical solutions across global markets.\n\nThrough strategic partnerships and a commitment to quality, we connect our customers with reliable healthcare products sourced from leading manufacturers worldwide.\n\nOur mission is to deliver excellence with integrity — ensuring every transaction strengthens trust, supports growth, and contributes to a healthier, more sustainable future.\n\nOur Goal\n\nTo establish Helixyne as a globally recognized name in pharmaceutical trading — synonymous with reliability, innovation, and ethical business practices.\n\nWe aim to build enduring partnerships that empower progress, drive sustainable growth, and uphold the highest standards of quality in everything we do"
             />
           </div>
         </section>
 
-        {/* Surgeries Section */}
-        <section className="wrapper bg-light py-10 py-md-14">
+        {/* Our Core Services Section */}
+        <section id="our-services" className="wrapper bg-light py-10 py-md-14">
           <div className="container">
-            <div className="col-md-10 col-lg-8">
-              <p className="fs-80 fw-bolder sub-h2 position-relative">Surgeries</p>
-              <h2 className="display-5 mb-16 fw-bold z-1 mt-n15 mt-md-n16 mt-lg-n17 sub-head">
-                ENT Surgery in Location
-                <span
-                  className="ms-2 d-inline-block"
-                  style={{
-                    borderBottom: '3px solid #D8D8D8',
-                    width: '30px',
-                    height: 0,
-                  }}
-                />
+            <div className="col-md-10 col-lg-8 text-center">
+              <p className="fs-80 fw-bolder sub-h2 position-relative">Our Core Services</p>
+              <h2 className="display-5 mb-16 fw-bold z-1 mt-n15 mt-md-n16 mt-lg-n17 sub-head text-blue">
+                <FaCogs className="me-3" /> Our Core Services
               </h2>
             </div>
 
             {/* Services Grid */}
             <Services />
+          </div>
+        </section>
+
+        {/* Contact Us Section - Placeholder */}
+        <section id="contact-us" className="wrapper bg-light py-10 py-md-14">
+          <div className="container">
+            <h2 className="display-5 mb-16 fw-bold z-1 mt-n15 mt-md-n16 mt-lg-n17 sub-head text-blue text-center">
+              Contact Us
+            </h2>
+            {/* Add contact form or information here */}
           </div>
         </section>
       </main>

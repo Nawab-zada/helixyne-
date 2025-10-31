@@ -81,7 +81,7 @@ section h3, .link h3:hover, .link:hover h4 {
 }
 
 .navbar-brand img {
-  width: 230px !important;
+  width: 60px !important;
 }
 
 .navbar-clone { top: 62px !important; }
@@ -169,3 +169,31 @@ section h3, .link h3:hover, .link:hover h4 {
 .image { max-width: 77% !important; }
 .border-10 { border-width: 10px !important; }
 .special-label { display: none !important; }
+
+.logo-text-blue {
+  color: #007BFF; /* A shade of blue, adjust as needed */
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.btn-yellow {
+  background-color: #FFC107 !important; /* A shade of yellow */
+  color: #212529 !important; /* Dark text for contrast */
+}
+
+.text-blue {
+  color: #1563ab !important; /* A shade of blue */
+}
+
+.text-yellow {
+  color: #FFC107 !important; /* A shade of yellow */
+}
+
+html {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  scroll-behavior: smooth;
+}
+
+body {
+}

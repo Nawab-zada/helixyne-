@@ -22,44 +22,34 @@ export const surgeryList = [
   {
     id: 1,
     url: '#',
-    src: '/img/surgery/sinus-surgery-icon.webp',
-    title: 'Sinus Surgery',
-    description: 'Advanced procedure for chronic sinusitis and nasal issues.',
+    icon: 'FaGlobe',
+    src: null,
+    title: 'Global Distribution Network',
+    description: 'Leveraging a robust global network to ensure timely and secure delivery of pharmaceutical products worldwide.',
   },
   {
     id: 2,
     url: '#',
-    src: '/img/surgery/mastoid-surgery-icon.webp',
-    title: 'Mastoid Surgery',
-    description: 'Treatment of middle ear infections and cholesteatoma.',
+    icon: 'FaCube',
+    src: null,
+    title: 'Supply Chain Optimization',
+    description: 'Implementing advanced logistics and supply chain strategies for maximum efficiency and cost-effectiveness.',
   },
   {
     id: 3,
     url: '#',
-    src: '/img/surgery/thyroid-surgery-icon.webp',
-    title: 'Thyroid Surgery',
-    description: 'Surgical removal or biopsy of thyroid gland.',
+    icon: 'FaShieldAlt',
+    src: null,
+    title: 'Quality Assurance & Compliance',
+    description: 'Adhering to the highest industry standards and regulatory compliance for all our pharmaceutical operations.',
   },
   {
     id: 4,
     url: '#',
-    src: '/img/surgery/tonsillectomy-surgery-icon.webp',
-    title: 'Tonsillectomy Surgery',
-    description: 'Removal of infected or enlarged tonsils.',
-  },
-  {
-    id: 5,
-    url: '#',
-    src: '/img/surgery/microlaryngeal-surgery-icon.webp',
-    title: 'Microlaryngeal Surgery',
-    description: 'Microscopic surgery on vocal cords and larynx.',
-  },
-  {
-    id: 6,
-    url: '#',
-    src: '/img/surgery/skull-surgery-icon.webp',
-    title: 'Skull Base Surgery',
-    description: 'Complex procedure for tumors near the skull base.',
+    icon: 'FaChartLine',
+    src: null,
+    title: 'Market Access & Expansion',
+    description: 'Facilitating market entry and expansion for pharmaceutical manufacturers into diverse global markets.',
   },
 ];
 
@@ -69,15 +59,10 @@ export const aboutUs = [
 ];
 
 export const aboutUsFooter = [
-  { id: 1, title: 'Home' },
-  { id: 2, title: 'About Us' },
-  { id: 3, title: 'Surgeries' },
-  { id: 4, title: 'Treatments' },
-  { id: 5, title: 'Dr Jack Smith' },
-  { id: 6, title: 'Gallery' },
-  { id: 7, title: 'Contact Us' },
-  { id: 8, title: 'Book Appointment' },
-  { id: 9, title: 'Privacy Policy' },
+  { id: 1, title: 'Home', url: '#' },
+  { id: 2, title: 'About Us', url: '#' },
+  { id: 3, title: 'Our Services', url: '#' },
+  { id: 4, title: 'Contact Us', url: '#' },
 ];
 
 export const treatmentsFooter = [

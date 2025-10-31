@@ -27,7 +27,7 @@ const Hero = () => {
       {/* Background image with overlay */}
       <div className="position-absolute top-0 start-0 w-100 h-100 z-0">
         <Image
-          src="/img/hero-bg.webp"
+          src="/helixyneee.jpg  "
           alt="Hero Background"
           fill
           style={{ objectFit: 'cover' }}
@@ -53,18 +53,18 @@ const Hero = () => {
             data-delay="500"
           >
             <h2 className="fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">
-              ENT Specialist in Location.
+              Introducing the Helixyne Indenter
             </h2>
 
             <p className="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">
-              Trust ENTrova for Comprehensive Ear, Nose & Throat Care in Location.
+              Experience precision and innovation with the Helixyne Indenter, a revolutionary device designed to elevate diagnostic accuracy and treatment efficacy. Engineered with cutting-edge technology, it provides unparalleled insights for medical professionals, ensuring superior patient outcomes. Discover the future of medical diagnostics.
             </p>
 
             <div className="animate__animated animate__slideInUp animate__delay-3s">
               <NextLink
                 title="Read More"
                 href="#"
-                className="btn btn-lg text-white secondary-bg rounded"
+                className="btn btn-lg text-white btn-yellow rounded"
               />
             </div>
           </div>

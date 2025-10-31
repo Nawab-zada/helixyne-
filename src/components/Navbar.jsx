@@ -34,11 +34,11 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
 
   const headerContent = (
     <Fragment>
-      <div className="navbar-brand w-100">
-        <NextLink
-          href="/"
-          title={<Image alt="Logo | ENTrova" className="py-2" src="/img/logo.webp" width={150} height={80} />}
-        />
+      <div className="navbar-brand ">
+        <NextLink href="/" className="d-flex align-items-center">
+          <Image alt="Logo | " src="/helixyne.png" width={60} height={60} />
+          <span className="d-flex align-items-center logo-text-blue ms-2">Helixyne</span>
+        </NextLink>
       </div>
 
       <div
@@ -54,9 +54,9 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
                 id="nav-logo"
                 alt="Logo | ENTrova"
                 className="p-2 position-static bg-white rounded"
-                src="/img/logo.webp"
-                style={{ maxWidth: '200px' }}
-                layout="fill"
+                src="/helixyne.png"
+                width={100}
+                height={100}
               />
             }
           />
@@ -73,178 +73,46 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
             <li className="nav-item" data-bs-dismiss="offcanvas">
               <NextLink href="/" title="Home" className="nav-link" />
             </li>
-
-            <li className="nav-item dropdown d-none d-lg-block">
-              <DropdownToggleLink title="About Us" className="nav-link dropdown-toggle" />
-              <ul className="dropdown-menu" data-bs-dismiss="offcanvas">
-                {aboutUs.map(({ id, url, title, children }) => (
-                  children ? (
-                    <li className="dropdown dropdown-submenu dropend" key={id}>
-                      <DropdownToggleLink title="About Us " />
-                      <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                    </li>
-                  ) : (
-                    <ListItemLink key={id} href="#" title={title} linkClassName="dropdown-item" />
-                  )
-                ))}
-              </ul>
-            </li>
-
-            <li className="nav-item d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="About Us" className="nav-link" />
-            </li>
-            <li className="nav-item d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Dr Jack Smith" className="nav-link" />
-            </li>
-            <li className="nav-item d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Gallery" className="nav-link" />
-            </li>
-
-            <li className="nav-item dropdown d-none d-lg-block">
-              <DropdownToggleLink title="Surgeries" className="nav-link dropdown-toggle" href="#" />
-              <div className="dropdown-menu dropdown-lg">
-                <div className="dropdown-lg-content">
-                  <div>
-                    {surgeryMenu.map(({ id, title, category }) => (
-                      <h4 className="dropdown-header surgery-headings" key={id}>
-                        <li onMouseEnter={handleSurgeryCategory(category)}>
-                          <Link className="dropdown-item" href="#">
-                            {title}
-                          </Link>
-                        </li>
-                      </h4>
-                    ))}
-                  </div>
-
-                  {surgeryCategory === 'ear' && (
-                    <div>
-                      <h4 className="dropdown-header d-header">Ear Surgeries</h4>
-                      <ul className="list-unstyled justify-content-center">
-                        {["Tympanoplasty", "Mastoid", "Stapes", "Myringotomy"].map((surgery, idx) => (
-                          <li key={idx}>
-                            <Link className="dropdown-item" href="#">
-                              {surgery} Surgery
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {surgeryCategory === 'nose' && (
-                    <div>
-                      <h4 className="dropdown-header d-header">Nose Surgeries</h4>
-                      <ul className="list-unstyled justify-content-center">
-                        {[
-                          "Adenoidectomy",
-                          "Septoplasty",
-                          "Sinus Surger",
-                          "Skull Base",
-                          "Pituitary",
-                          "Endonasal Dacryocystorhinostomy"
-                        ].map((surgery, idx) => (
-                          <li key={idx}>
-                            <Link className="dropdown-item" href="#">
-                              {surgery} Surgery
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {surgeryCategory === 'throat' && (
-                    <div>
-                      <h4 className="dropdown-header d-header">Throat Surgeries</h4>
-                      <ul className="list-unstyled justify-content-center">
-                        {[
-                          "Tonsillectomy",
-                          "Thyroid",
-                          "Parotid",
-                          "Microlaryngeal",
-                          "Bronchoscopy",
-                          "Direct Laryngoscopy & Biopsy"
-                        ].map((surgery, idx) => (
-                          <li key={idx}>
-                            <Link className="dropdown-item" href="#">
-                              {surgery} Surgery
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </li>
-
-            <li className="nav-item dropdown d-lg-none">
-              <DropdownToggleLink title="Surgeries" className="nav-link dropdown-toggle" />
-              <ul className="dropdown-menu">
-                {surgery.map(({ id, title, children, url }) => (
-                  children ? (
-                    <li className="dropdown dropdown-submenu dropend" key={id}>
-                      <DropdownToggleLink title={title} className="dropdown-item dropdown-toggle" />
-                      <ul className="dropdown-menu" data-bs-dismiss="offcanvas">
-                        {children.map((child) => (
-                          <ListItemLink
-                            key={child.id}
-                            href="#"
-                            title={child.title}
-                            linkClassName="dropdown-item"
-                          />
-                        ))}
-                      </ul>
-                    </li>
-                  ) : (
-                    <ListItemLink key={id} href="#"title={title} linkClassName="dropdown-item" />
-                  )
-                ))}
-              </ul>
-            </li>
-
-            {["d-none d-lg-block", "d-lg-none"].map((cls, index) => (
-              <li className={`nav-item dropdown ${cls}`} key={index}>
-                <DropdownToggleLink title="Treatments" className="nav-link dropdown-toggle" />
-                <ul className="dropdown-menu" data-bs-dismiss="offcanvas">
-                  {treatments.map(({ id, title, children }) => (
-                    children ? (
-                      <li className="dropdown dropdown-submenu dropend" key={id}>
-                        <DropdownToggleLink title="Treatments" />
-                        <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                      </li>
-                    ) : (
-                      <ListItemLink key={id} href="#" title={title} linkClassName="dropdown-item" />
-                    )
-                  ))}
-                </ul>
-              </li>
-            ))}
-
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Contact Us" className="nav-link" />
+              <NextLink href="/#about-us" title="About Us" className="nav-link" />
             </li>
-            <li
-              className="nav-item align-items-center d-flex mt-3 mt-lg-0 ms-lg-3"
-              data-bs-dismiss="offcanvas"
-            >
-              <NextLink
-                title="Book Appointment"
-                href="#"
-                className="btn btn-sm secondary-bg text-white mb-lg-1 rounded border border-md-none"
-              />
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="/#our-services" title="Our Services" className="nav-link" />
             </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="/#contact-us" title="Contact Us" className="nav-link" />
+            </li>
+
+            
           </ul>
 
           <div className="offcanvas-footer d-lg-none">
             <div>
               <NextLink
-                title="contact@example.com"
+                title="info@helixyne.com"
                 className="link-inverse"
-                href="mailto:contact@example.com"
+                href="mailto:info@helixyne.com"
               />
               <br />
-              <NextLink href="tel:+911234567890" title="+91 12345 67890" />
+              <NextLink
+                title="faizan@helixyne.com"
+                className="link-inverse"
+                href="mailto:faizan@helixyne.com"
+              />
+              <br />
+              <NextLink
+                title="mkt@helixyne.com"
+                className="link-inverse"
+                href="mailto:mkt@helixyne.com"
+              />
+              <br />
+              <NextLink href="tel:+923126755909" title="+92 312 6755909" />
+              <br />
+              <NextLink href="tel:+923114501358" title="+92 311 4501358" />
+              <br />
+              <NextLink href="tel:+923467663027" title="+92 346 7663027" />
+              <br />
+              <NextLink href="https://wa.me/923126755909" title="WhatsApp" className="link-inverse" />
               <br />
               <SocialLinks />
             </div>
@@ -253,6 +121,9 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
       </div>
 
       <div className={navOtherClass}>
+        <div className="d-none d-lg-block ms-auto">
+          <NextLink href="mailto:info@helixyne.com" title="info@helixyne.com" className="btn btn-sm text-dark me-2" />
+        </div>
         <button
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvas-nav"
@@ -271,7 +142,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
       <nav ref={navbarRef} className={sticky ? 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed' : navClassName}>
         {fancy ? (
           <div className="container">
-            <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-end">
+            <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-10  align-items-end">
               {headerContent}
             </div>
           </div>

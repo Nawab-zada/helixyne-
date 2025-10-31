@@ -14,11 +14,11 @@ const Topbar = () => {
           <div className="d-flex align-items-center justify-content-xxl-center col-4 col-xxl-2 me-2">
             <i className="uil uil-envelope text-white fs-22 mt-1 me-2" aria-hidden="true" />
             <Link
-              href="mailto:contact@example.com"
+              href="mailto:info@helixyne.com"
               className="link-white hover fw-semibold"
               aria-label="Email contact"
             >
-              contact@example.com
+              info@helixyne.com
             </Link>
           </div>
 
