@@ -27,7 +27,7 @@ const Hero = () => {
       {/* Background image with overlay */}
       <div className="position-absolute top-0 start-0 w-100 h-100 z-0">
         <Image
-          src="/helixyneee.jpg  "
+          src="/helixyneee.jpg"
           alt="Hero Background"
           fill
           style={{ objectFit: 'cover' }}
