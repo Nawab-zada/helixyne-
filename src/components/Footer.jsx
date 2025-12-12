@@ -123,7 +123,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="d-md-flex align-items-center justify-content-center">
-          <p className="mb-2 mb-lg-0">© {currentYear} ENTrova. All rights reserved.</p>
+          <p className="mb-2 mb-lg-0">© {currentYear} Helixyne. All rights reserved.</p>
         </div>
       </div>
     </footer>

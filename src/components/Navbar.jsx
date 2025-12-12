@@ -37,7 +37,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
       <div className="navbar-brand ">
         <NextLink href="/" className="d-flex align-items-center">
           <Image alt="Logo | " src="/helixyne.png" width={60} height={60} />
-          <span className="d-flex align-items-center logo-text-blue ms-2">Helixyne</span>
+          <span className="d-flex align-items-center logo-text-blue ms-2">Helixyne Chemical</span>
         </NextLink>
       </div>
 
@@ -60,6 +60,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
               />
             }
           />
+          <span className="d-flex align-items-center logo-text-blue ms-2">Helixyne Chemical</span>
           <button
             type="button"
             aria-label="Close"
