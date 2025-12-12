@@ -48,7 +48,7 @@ const Footer = () => {
                 <div className="d-flex mb-1 align-items-start">
                   <i className="uil uil-location-pin-alt fs-26" />
                   <address className="ms-2 m-0 mt-1">
-                    123 Tech Park, Ta. Richmond, Dist. Greater London, United Kingdom – SW1A 1AA.
+                    62-defense Road, Qasid Shaheed. Roundabout near DHA Rahbar Lahore
                   </address>
                 </div>
                 <div className="d-flex mb-1 align-items-center">

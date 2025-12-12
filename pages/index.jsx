@@ -12,9 +12,9 @@ const Home = () => {
       <PageProgress />
 
       <Head>
-        <title>ENTrova - ENT Hospital Website Template</title>
-        <meta name="description" content="Trusted ENT care in Location. Discover our expert surgeries, treatments, and compassionate healthcare." />
-        <link rel="canonical" href="https://entrova.com" />
+        <title>Helixyne Chemical</title>
+        <meta name="description" content="Helixyne Chemical: Global Pharmaceutical Solutions" />
+        <link rel="canonical" href="https://helixyne.com" />
       </Head>
 
       <main className="content-wrapper overflow-hidden">
@@ -23,12 +23,12 @@ const Home = () => {
 
         {/* About Section */}
         <section id="about-us" className="wrapper bg-light">
-          <div className="container pt-8 pt-md-15">
+          <div className="container pt-7 pt-md-15">
             <About
               imgPosition="right"
               imgSrc="/aboutus.jpg"
               heading="About Us"
-              para="Our Mission\n\nAt Helixyne, we are dedicated to enabling access to trusted pharmaceutical solutions across global markets.\n\nThrough strategic partnerships and a commitment to quality, we connect our customers with reliable healthcare products sourced from leading manufacturers worldwide.\n\nOur mission is to deliver excellence with integrity — ensuring every transaction strengthens trust, supports growth, and contributes to a healthier, more sustainable future.\n\nOur Goal\n\nTo establish Helixyne as a globally recognized name in pharmaceutical trading — synonymous with reliability, innovation, and ethical business practices.\n\nWe aim to build enduring partnerships that empower progress, drive sustainable growth, and uphold the highest standards of quality in everything we do"
+              para="Our MissionHelixyne, we are dedicated to enabling access to trusted pharmaceutical solutions across global markets. Through strategic partnerships and a commitment to quality, we connect our customers with reliable healthcare products sourced from leading manufacturers worldwide.\n\nOur mission is to deliver excellence with integrity — ensuring every transaction strengthens trust, supports growth, and contributes to a healthier, more sustainable future.\n\nOur Goal\n\nTo establish Helixyne as a globally recognized name in pharmaceutical trading — synonymous with reliability, innovation, and ethical business practices. We aim to build enduring partnerships that empower progress, drive sustainable growth, and uphold the highest standards of quality in everything we do"
             />
           </div>
         </section>

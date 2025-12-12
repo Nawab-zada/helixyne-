@@ -11,10 +11,10 @@ class ENTrovaDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Favicon Links */}
-          <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png" />
-          <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
-          <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="96x96" href="/helixyne.png" />
+          <link rel="icon" type="image/svg+xml" href="/helixyne.png" />
+          <link rel="shortcut icon" href="/helixyne.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/helixyne.png" />
           <link rel="manifest" href="/img/favicon/site.webmanifest" />
         </Head>
         <body>
